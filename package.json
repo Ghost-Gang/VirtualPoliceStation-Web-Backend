@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server",
-    "client": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run client && npm run build"
+    "heroku-postbuild": "npm run start"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
